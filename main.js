@@ -18,14 +18,14 @@ const glados = async () => {
     }).then((r) => r.json())
     return [
       'Checkin OK ',
-      `${checkin.message}`,
       ` Left Days ${Number(status.data.leftDays)}`,
+      `${checkin.message}`,
     ]
   } catch (error) {
     return [
       'Checkin Error ',
-      `${error}`,
       `<${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}>`,
+      `${error}`,
     ]
   }
 }
