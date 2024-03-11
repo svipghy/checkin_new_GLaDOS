@@ -3,8 +3,8 @@ name: run
 on:
   workflow_dispatch:
   push:
-  schedule:
-    - cron: 20 09,22 * * *
+#  schedule:
+#    - cron: 20 09,22 * * *
 
 jobs:
   run:
